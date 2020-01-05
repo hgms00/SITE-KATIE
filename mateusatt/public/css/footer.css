@@ -1,0 +1,82 @@
+*  {
+    margin:0;
+    padding:0;
+}
+
+html, body {height:100%;}
+
+.main-div {
+    min-height:100%;
+    position:relative;
+    width:100%;
+}
+.img1{
+    width: 200px;
+    position: relative;
+    left: initial;
+}
+
+.footer-data{
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    margin-left: 120px;
+}
+
+li{
+    margin-top: 3px;
+}
+.footer {
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgb(211, 14, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-title{
+    border: 2px solid white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font: bold;
+    margin-bottom: 8px;    
+    color: white;
+    text-decoration: none;
+    font-style: none;
+}
+
+
+a:link
+{
+text-decoration:none;
+text-decoration-color: white;
+font-style: none;
+}
+
+.last-footer{
+    height: 50px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+}
+
+.copy-element{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+}
+
+.content {overflow:hidden;}
+.aside {width:200px;}
+.fleft {float:left;}
+.fright {float:right;}
