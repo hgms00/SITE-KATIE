@@ -211,6 +211,9 @@ button:hover span:nth-child(4)
     transition-duration: .2s;
   }
 
+  html {
+    overflow-y:hidden;
+  }
 
 
 /*.menu:hover .menu__link:not(:hover){
@@ -258,19 +261,4 @@ button:hover span:nth-child(4)
     html{
       font-size: 50%;
     }
-  }
-  
- 
-  
-  .begin{
-    box-sizing: border-box;
-    margin: 0 auto;
-    position: fixed;
-   
-    max-width: 960px;
-    width: 100%;  
-    padding-left: 1rem;
-    padding-right: 1rem;
-    
-    order: 0;*/
   }
