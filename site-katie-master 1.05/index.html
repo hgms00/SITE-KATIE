@@ -1,0 +1,643 @@
+<html>
+    <head>
+        <meta  charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KATIE</title>
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/slide.css"/>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel='shortcut icon' href="resources/img/CircleKatie.png" type='image/png' />
+        <script src="js/slide.js"></script>
+    </head>
+
+    <style>
+
+body{
+    background-color: white;   
+   
+} 
+
+.menuIcons{
+    position: relative;
+    left: 95%;
+    margin-top: 0%;
+    width:0%;
+    display: inline-flex;
+    
+}
+.mainImg1{
+    width: 10%;
+}
+
+#instagramIcon{
+    position: relative; 
+    margin-top: -1%;
+    left:93%;   
+    width:5%;
+   
+}
+.yellowLine{
+    padding: 0.7vw;
+    background-color: #fdd54f; 
+    height: 1%;
+}
+.welcome-text{
+    position: relative;
+    margin-left: 10%;
+    margin-top: -3.5%;
+    margin-bottom: 0%;
+    color: white;
+    width:5%;
+    
+    
+    font-size: 12vw;
+}
+#menuButtonToKnow{
+   background-color: black;
+    color: white;
+    /*border-radius: 35%;*/
+    position: relative;
+    left: 42%;
+    width:20%;
+    border-color: white;
+    border: 0.1vw solid;
+    border-width: 50%;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    margin-bottom: 0%;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight:bold;
+    
+}
+#menuButtonToKnow:hover{
+    color: #f8049c;
+    background-color: black;
+    border-color: #f8049c;
+    padding: 0.2vw;
+    border: 0.4vw solid;
+}
+
+.welcome-subText{
+    position: relative;
+    
+    margin-left: 21%;
+    margin-top: 0%;
+    margin-bottom: 8%;
+    color: white;
+    font-size: 1.2vw;
+}   
+
+.mainEvents{
+    position: relative;
+    right: 0.5%;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5vw;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mySlides{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    border-radius: 20px;
+
+}
+.moldura{
+
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 840px; 
+    height: 320px;
+    border:5px double yellow;
+    border-radius: 20px;
+
+}
+/*SOCORO*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+  justify-content: center; 
+    min-height:40vw;
+    max-width: 65vw;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 22px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertext: hoover{
+  /*color: #f2f2f2; */
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10vw;
+  width: 10vw;
+ 
+  margin: 0 0.2vw;
+  background-color: #bbb;
+  border-radius: 0%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot: hover{
+  border-color: black;
+    border: 80vw;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ------ */
+
+//Cria arquivo slide.css
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mySlides{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    border-radius: 20px;
+
+}
+.moldura{
+
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 840px; 
+    height: 320px;
+    margin-bottom: 5%;
+    border-color: black;
+    /*border:5px double black;
+    border-radius: 20px;*/
+
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1vw;
+  margin: 0; padding: 0;
+  min-height: 75vw;
+  display: flex;   
+  flex-direction: column;
+}
+.logo {
+  position: absolute;
+  left: 62%;
+  top: 25%;
+    color: black;
+    background-color: black;
+    
+  margin: 0;
+  padding: 0;
+  width: 20%;
+}
+.copy-element{
+    height: 1%;
+    width: 100%;
+    max-height: 5vw;
+    font-size: 1vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.mainMenu{
+    width: 100%;
+    height: 100%;
+    min-height: 34vw;
+    background-color: black;
+    padding: 0; margin : 0;
+}
+.menuButtons{
+    width:80%;
+    height: 1%; 
+}
+#menuButton1{
+    margin-left: 10%;
+}
+.menuSubText{
+    width: 50%;
+    height: 0%;
+    margin: 0;
+    padding: 0;
+}
+.support{
+    background-color: black;
+    border: none;
+    color: white;
+    /*border-radius: 35%;*/
+    position: relative;
+    width:20%;
+    border-color: white;
+    border: 0.1vw solid;
+    border-width: 50%;
+    font-size: 1.5vw;
+    padding:0.2vw;
+    margin-bottom: 2%;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight:bold;
+}
+.about_us{
+    background-color: black;
+    color: white;
+    /*border-radius: 35%;*/
+    position: relative;
+    border-color: white;
+    border: 0.1vw solid;
+    border-width: 50%;
+    font-size: 1.5vw;
+    padding: 0.2vw;
+    margin-bottom: 2%;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight:bold;
+}
+button{
+    background-color: black;
+    border-color: transparent;
+    color: #f8049c;
+    margin-left: 1vw;
+    font-size: 1vw;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #f8049c;
+    text-transform: uppercase;
+    padding: 0.3vw;
+    letter-spacing: 0.3vw;
+    text-decoration: none;  
+    overflow: hidden;
+    transition: 0.2s;
+}
+button:hover{
+    color: #f8049c;
+    /*#6f0b49*/
+    background-color: black;
+    /*box-shadow: 0 0 1vw #f8049c,0 0 1vw #f8049c,0 0 1vw #f8049c;*/
+    transition-delay: 0.5s;
+    border-color: #f8049c;
+}
+button span{
+    position: absolute;
+    display: block; 
+}
+button span:nth-child(1)
+{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f8049c);
+}
+button:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 0.5s;
+}
+button span:nth-child(3)
+{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f8049c);
+}
+button:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+button span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f8049c);
+}
+button:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.12s;
+}
+button span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f8049c);
+}
+button:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.40s;
+}
+.menu__link{
+    padding: 1rem 1.5rem;
+    
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+.menu__link{
+    position: relative;
+    overflow: hidden;
+  
+    will-change: color;
+    transition: color .25s ease-out;  
+  }
+  
+  .menu__link::before, 
+  .menu__link::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: black;
+  
+    will-change: width;
+    transition: width .1s ease-out;
+  
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .menu__link::before{
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  
+  .menu__link::after{
+    right: 50%;
+    transform: translateX(50%); 
+  }
+  
+  .menu__link:hover::before, 
+  .menu__link:hover::after{
+    width: 100%;
+    transition-duration: .2s;
+  }
+  html {
+    overflow-y:hidden;
+  }
+
+
+  </style>
+    
+    <body>
+        <a href="index.html"> <img class="logo" src ="resources/img/logo0.gif"></a> 
+        <header class="mainMenu">   
+                      <ul class="menuButtons">
+                        <button id="menuButton1"> Opção 1
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <button id="menuButton2"> Opção 2
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span></button>
+                        <button id="menuButton3"> Opção 3
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span></button>
+                        <button id="menuButton4"> Opção 4
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </button> 
+                    </ul>
+                    
+                    <a href = "https://www.instagram.com/katie.ufal/"><img src="resources/img/social-media/icons8-instagram-64.png" alt="" id="instagramIcon"></a>
+                    <h1 class="Welcome-text"> KATIE</h1>
+                    <div class="menuSubText">
+                        <h5 class="Welcome-subText"> Katie é um grupo formado por mulheres do 
+                        Instituto de Computação da UFAL. Nosso objetivo é promover ações de apoio e incentivo às estudantes.</h5>
+                        <input type="button" id="menuButtonToKnow" value="CONHEÇA">
+                    </div>
+                     
+           
+             
+        
+            </header>
+         <div class="yellowLine">
+        </div>
+        
+         <h1 class="mainEvents" style="margin-bottom: 1%; right: 0.5%;">ACONTECIMENTOS</h1>
+       
+        <!-- TENTATIVA DE SLIDESHOW -->
+            <div class="slideshow-container" style=""> 
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <a href="index.html"> <img src ="resources/img/KATIE.png" style="height: 44vw; width: 60vw; border: 0.3vw solid;  border-color: black;"></a> 
+                    <a href="index.html"> <div class="text">KATIE irá ao ITA !</div> </a>
+                  </div>
+
+              <div class="mySlides fade" style="">
+                <div class="numbertext">2 / 3</div>
+                <a href="index.html"> <img src ="resources/img/slide2teste.jpg" style="height: 44vw; width: 60vw; border: 0.3vw solid;  border-color: black;"></a> 
+                <div class="text">Caption Two</div>
+              </div> 
+                 
+              <div class="mySlides fade" style="">
+                <div class="numbertext">3 / 3</div>
+                <a href="index.html"> <img src ="resources/img/slide3teste.jpg" style="height: 44vw; width: 60vw; border: 0.3vw solid;  border-color: black;"></a> 
+                <div class="text">Caption Three</div> 
+              </div> 
+
+           
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div> 
+          
+
+             
+             <div style="text-align:center; margin-bottom: 5%; margin-top: 1%;">
+                <span class="dot" onclick="currentSlide(1)"><img src ="resources/img/KATIE.png" style="height: 10vw; width: 10vw; border: 0.15vw double black;"></span>
+                <span class="dot" onclick="currentSlide(2)"><img src ="resources/img/slide2teste.jpg" style="height: 10vw; width: 10vw; border: 0.15vw double black;"></span>
+                <span class="dot" onclick="currentSlide(3)"><img src ="resources/img/slide3teste.jpg" style="height: 10vw; width: 10vw; border: 0.15vw double black;"></span>
+            </div>
+       
+        
+        <script>
+             var slideIndex = 1;
+             showSlides(slideIndex);
+             var plusFlag = 0;
+           
+            // Next/previous controls
+            function plusSlides(n) {
+              plusFlag = 1;
+              setTimeout(showSlides(slideIndex += n),5000);
+                   
+            }
+            function currentSlide(n) {
+                  plusFlag = 1;
+                  setTimeout(showSlides(slideIndex = n),5000);
+                }
+
+
+            // Thumbnail image controls
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              if(plusFlag ==0)    {slideIndex++;}
+              
+              if (slideIndex > slides.length) {slideIndex = 1}       
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+                if(plusFlag == 1){ plusFlag = 0;}
+                else
+                setTimeout(showSlides, 5000);
+             
+            }
+        </script>
+
+
+        <!-- --------------------- -->
+        <!-- <h5 class="mainNews">
+            <a href="index.html" id="mainNews0" style="font-size: 1vw; width: 100%; ">
+            <img class="mainNews1" style="position: relative; width:15%; left:15%;" src ="resources/img/KATIE.png">
+            <h5 id="mainNews1Text" style="justify-content: center;  width: 15%; position: relative; left: 16%;">KATIE irá se apresentar no ITA!</h5>
+            </a>
+        </h5> 
+        
+        
+        
+        <!-- Fim do Site -->
+         <footer class="footer" style="background-color: black; width: 100%; display: flex; min-height: 7vw; max-height: 11vw;">
+                <img src="resources/img/logo.png" class="mainImg1" alt="mainImg1" style="position: relative;width: 12%; left: 30%; ">
+                <ul class="footer-data" style="position: relative; left: 30%; width: 12%;font-size: 0.9vw; bottom: 0.5vw;">
+                    <h5 class="footer-title"><a class="about_us" href="">Sobre Nós</a></h5>
+                    <h5 style="color: white;">Quem somos?</h5>
+                    <h5 style="color: white;">UFAL</h5>
+                    <h5 style="color: white;  ">Motivação</h5>
+                </ul>
+                <ul class="footer-data" style="position: relative; left: 30%; width: 10%; font-size: 0.9vw; bottom: 0.5vw;">
+                    <h5 class="footer-title"><a class="support" href="">Suporte</a></h5>
+                    <h5 style="color: white;  ">FAQ</h5>
+                    <h5 style="color: white;  ">Contato</h5>
+                    <h5 style="color: white; ">email@ic.ufal.br</h5>
+                </ul>
+        </footer>
+        <h1 class="copy-element">© 2020 Copyright - Mateus Fernando Felismino/Hugo Gabriel de Melo Santos</h1>
+        <!-- ------------------------------------- -->
+     </body>
+</html>
+    
+
